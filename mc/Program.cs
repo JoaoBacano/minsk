@@ -1,5 +1,6 @@
 ﻿using System;
 using Minsk.CodeAnalysis;
+using Minsk.CodeAnalysis.Syntax;
 
 namespace Minsk
 {
@@ -70,7 +71,7 @@ namespace Minsk
 
             Console.WriteLine();
 
-            indent += isLast ? "   " : "│  ";
+            indent += isLast ? "   " : "│  ";   
 
             var lastChild = node.GetChildren().LastOrDefault();
 

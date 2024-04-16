@@ -1,3 +1,6 @@
+
+using Minsk.CodeAnalysis.Syntax;
+
 namespace Minsk.CodeAnalysis
 {
 
@@ -17,8 +20,19 @@ namespace Minsk.CodeAnalysis
 
         private int EvaluateExpression(ExpressionSyntax node)
         {
-            if (node is NumberEmpressionSyntax n)
-                return (int)n.NumberToken.Value;
+            if (node is LiteralEmpressionSyntax n)
+                return (int)n.LiteralToken.Value;
+
+            if(node is UnaryExpressionSyntax u)
+            {
+                var operand = EvaluateExpression(u.Operand);
+                if (u.OperatorToken.Kind == SyntaxKind.PlusToken)
+                    return operand;
+                else if (u.OperatorToken.Kind == SyntaxKind.MinusToken)
+                    return -operand;
+                else
+                    throw new Exception($"Unexpected unary operator {u.OperatorToken.Kind}");
+            }
 
             if (node is BinaryExpressionSyntax b)
             {
