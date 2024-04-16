@@ -1,8 +1,8 @@
 namespace Minsk.CodeAnalysis.Syntax
 {
-    public sealed class LiteralEmpressionSyntax : ExpressionSyntax
+    public sealed class LiteralExpressionSyntax : ExpressionSyntax
     {
-        public LiteralEmpressionSyntax(SyntaxToken literalToken)
+        public LiteralExpressionSyntax(SyntaxToken literalToken)
         {
             LiteralToken = literalToken;
         }
