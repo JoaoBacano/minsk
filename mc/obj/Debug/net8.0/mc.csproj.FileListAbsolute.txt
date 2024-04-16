@@ -1,0 +1,15 @@
+c:\Users\jmszf\Documents\minsk\mc\bin\Debug\net8.0\mc.exe
+c:\Users\jmszf\Documents\minsk\mc\bin\Debug\net8.0\mc.deps.json
+c:\Users\jmszf\Documents\minsk\mc\bin\Debug\net8.0\mc.runtimeconfig.json
+c:\Users\jmszf\Documents\minsk\mc\bin\Debug\net8.0\mc.dll
+c:\Users\jmszf\Documents\minsk\mc\bin\Debug\net8.0\mc.pdb
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.AssemblyInfoInputs.cache
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.AssemblyInfo.cs
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.csproj.CoreCompileInputs.cache
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.sourcelink.json
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.dll
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\refint\mc.dll
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.pdb
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.genruntimeconfig.cache
+c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\ref\mc.dll
