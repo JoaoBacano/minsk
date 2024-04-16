@@ -1,6 +1,6 @@
 namespace Minsk.CodeAnalysis
 {
-    class Parser
+    internal sealed class Parser
     {
 
         private readonly SyntaxToken[] _tokens;
@@ -52,7 +52,7 @@ namespace Minsk.CodeAnalysis
             return current;
         }
 
-        private SyntaxToken Match(SyntaxKind kind)
+        private SyntaxToken MatchToken(SyntaxKind kind)
         {
 
             if (Current.Kind == kind)
@@ -61,18 +61,16 @@ namespace Minsk.CodeAnalysis
             _diagnostics.Add($"ERROR: unexpected token <{Current.Kind}>, expected <{kind}>");
             return new SyntaxToken(kind, Current.Position, null, null);
         }
-
-        public ExpressionSyntax ParseExpression()
-        {
-            return ParseTerm();
-        }
-
         public SyntaxTree Parse()
         {
 
-            var expression = ParseTerm();
-            var endOfFileToken = Match(SyntaxKind.EndOfFileToken);
+            var expression = ParseExpression();
+            var endOfFileToken = MatchToken(SyntaxKind.EndOfFileToken);
             return new SyntaxTree(_diagnostics, expression, endOfFileToken);
+        }
+        public ExpressionSyntax ParseExpression()
+        {
+            return ParseTerm();
         }
 
         public ExpressionSyntax ParseTerm()
@@ -114,12 +112,12 @@ namespace Minsk.CodeAnalysis
             {
                 var left = NextToken();
                 var expression = ParseExpression();
-                var right = Match(SyntaxKind.CloseParenthesisToken);
+                var right = MatchToken(SyntaxKind.CloseParenthesisToken);
                 return new ParenthesizedExpressionSyntax(left, expression, right);
             }
 
-            var numberToken = Match(SyntaxKind.NumberToken);
-            return new NumberEmpressionSyntax(numberToken);
+            var numberToken = MatchToken(SyntaxKind.NumberToken);
+            return new LiteralEmpressionSyntax(numberToken);
         }
     }
 }

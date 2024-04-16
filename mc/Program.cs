@@ -3,11 +3,11 @@ using Minsk.CodeAnalysis;
 
 namespace Minsk
 {
-    class Program
+    internal static class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            bool showTree = false;
+            var showTree = false;
 
             while (true)
             {
@@ -31,10 +31,10 @@ namespace Minsk
                 var syntaxTree = SyntaxTree.Parse(line);
 
                 if(showTree){
-                    var color = Console.ForegroundColor;
+                    
                     Console.ForegroundColor = ConsoleColor.DarkGray;
                     PrettyPrint(syntaxTree.Root);
-                    Console.ForegroundColor = color;
+                    Console.ResetColor();
                 }
 
                 if(!syntaxTree.Diagnostics.Any()){
@@ -42,14 +42,14 @@ namespace Minsk
                     var result = e.Evaluate();
                     Console.WriteLine(result);
                 }else{
-                    var color = Console.ForegroundColor;
+                    
                     Console.ForegroundColor = ConsoleColor.DarkRed;
 
                     foreach(var _diagnostic in syntaxTree.Diagnostics){
                         Console.WriteLine(_diagnostic);
                     }
                     
-                    Console.ForegroundColor = color;
+                    Console.ResetColor();
                 }
             
             }
@@ -70,7 +70,7 @@ namespace Minsk
 
             Console.WriteLine();
 
-            indent += isLast ? "    " : "│   ";
+            indent += isLast ? "   " : "│  ";
 
             var lastChild = node.GetChildren().LastOrDefault();
 
