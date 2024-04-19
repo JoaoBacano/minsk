@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Minsk/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Minsk.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Minsk.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Minsk/1.0.0": {
+      "type": "project",
+      "path": "../Minsk/Minsk.csproj",
+      "msbuildProject": "../Minsk/Minsk.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Minsk >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\jmszf\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\jmszf\\Documents\\minsk\\Minsk\\Minsk.csproj": {
+              "projectPath": "C:\\Users\\jmszf\\Documents\\minsk\\Minsk\\Minsk.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

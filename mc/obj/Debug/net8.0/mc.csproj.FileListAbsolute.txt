@@ -13,3 +13,7 @@ c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\refint\mc.dll
 c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.pdb
 c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.genruntimeconfig.cache
 c:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\ref\mc.dll
+C:\Users\jmszf\Documents\minsk\mc\bin\Debug\net8.0\Minsk.dll
+C:\Users\jmszf\Documents\minsk\mc\bin\Debug\net8.0\Minsk.pdb
+C:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.csproj.AssemblyReference.cache
+C:\Users\jmszf\Documents\minsk\mc\obj\Debug\net8.0\mc.csproj.Up2Date
