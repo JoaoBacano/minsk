@@ -1,0 +1,12 @@
+C:\Users\jmszf\Documents\minsk\Minsk\obj\Debug\net8.0\Minsk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jmszf\Documents\minsk\Minsk\obj\Debug\net8.0\Minsk.AssemblyInfoInputs.cache
+C:\Users\jmszf\Documents\minsk\Minsk\obj\Debug\net8.0\Minsk.AssemblyInfo.cs
+C:\Users\jmszf\Documents\minsk\Minsk\obj\Debug\net8.0\Minsk.csproj.CoreCompileInputs.cache
+C:\Users\jmszf\Documents\minsk\Minsk\obj\Debug\net8.0\Minsk.sourcelink.json
+C:\Users\jmszf\Documents\minsk\Minsk\bin\Debug\net8.0\Minsk.deps.json
+C:\Users\jmszf\Documents\minsk\Minsk\bin\Debug\net8.0\Minsk.dll
+C:\Users\jmszf\Documents\minsk\Minsk\bin\Debug\net8.0\Minsk.pdb
+C:\Users\jmszf\Documents\minsk\Minsk\obj\Debug\net8.0\Minsk.dll
+C:\Users\jmszf\Documents\minsk\Minsk\obj\Debug\net8.0\refint\Minsk.dll
+C:\Users\jmszf\Documents\minsk\Minsk\obj\Debug\net8.0\Minsk.pdb
+C:\Users\jmszf\Documents\minsk\Minsk\obj\Debug\net8.0\ref\Minsk.dll
